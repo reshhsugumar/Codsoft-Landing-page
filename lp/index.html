@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta rel="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+        <title>Index</title>
+    </head>
+    <body>
+        <div class="overlay">
+            <p><i>Puma</i></p>
+        </div>
+        <header class="header">
+            <div class="logo">
+                <img src="C:\Users\RESHMA\Downloads\puma-logo-73439547CD-seeklogo.com.png" height="70" width="20" alt="logo">
+            </div>
+                <nav>
+                    <ul class="menu" id=".menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                    <i class="fa-solid fa-bars" id="toggle"></i>
+
+                </nav>
+
+           
+        </header>
+        <section class="home">
+            <div class="content-bx">
+            <h3>
+               Just do it. 
+            </h3><br>
+            <h2>
+                Puma Nitro Shoes
+            </h2><br>
+
+            
+             <p class="detail">
+                
+                "Has anyone done it before? Is it a first?" That's the principle that guides Innovation at PUMA. Constantly being the first to do something has always been motivating us.
+                It's the pursuit of creating products that adapt with the human body and with the environment the human body is in in the fields of thermoregulation, movement or fit. PUMA's self-lacing Fit Intelligence Training Shoe responds to athletes and their environment by adapting to the wearer's needs. The shoe automatically adapts to the foot and knows how loose or tight it can lace. 
+                The only thing the wearer has to do is swiping up or down on the shoe.</p> 
+                <button>
+                    Learn More
+                </button>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="img-bx">
+                <img src="https://padelmarket.com/4057-home_default/puma-solarcourt-rct-shoes.jpg" alt="product" height="550" width="550">
+            </div>
+        </section>
+        <script>
+            const toggle = document.getElementById('toggle');
+            const menu = document.getElementById('.menu');
+            toggle.onclick = function()
+            {
+                menu.classList.toggle('active');
+
+            }
+            gsap.from('.header', 1.2, {opacity:0, y:-100, delay:0.1})
+            gsap.from('h3', 1.2, {opacity:0, x:-400, delay:0.3})
+            gsap.from('h2', 1.2, {opacity:0, x:-400, delay:0.8})
+            gsap.from('.detail', 1.2, {opacity:0, x:-400, delay:1.3})
+            gsap.from('button', 1.2, {opacity:0, x:-400, delay:1.5})
+            gsap.from('.img-bx', 1.2, {opacity:0, x:300, delay:0.8 })
+            gsap.from('.social-icons', 1.2, {opacity:0, y:100, delay:0.1})
+
+        </script>
+    </body>
+</html>
